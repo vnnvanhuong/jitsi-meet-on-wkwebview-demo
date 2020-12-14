@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A050B43C127371502D502617 /* Pods_jitsi_meet_on_wkwebview_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C992E67B2D273C72411CDC4 /* Pods_jitsi_meet_on_wkwebview_demo.framework */; };
 		C64E80F625871D2800F2B390 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E80F525871D2800F2B390 /* AppDelegate.swift */; };
 		C64E80F825871D2800F2B390 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E80F725871D2800F2B390 /* SceneDelegate.swift */; };
 		C64E80FA25871D2800F2B390 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E80F925871D2800F2B390 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C992E67B2D273C72411CDC4 /* Pods_jitsi_meet_on_wkwebview_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jitsi_meet_on_wkwebview_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0A03AE7D274C2CDE9EAF5E8 /* Pods-jitsi-meet-on-wkwebview-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jitsi-meet-on-wkwebview-demo.release.xcconfig"; path = "Target Support Files/Pods-jitsi-meet-on-wkwebview-demo/Pods-jitsi-meet-on-wkwebview-demo.release.xcconfig"; sourceTree = "<group>"; };
 		C64E80F225871D2800F2B390 /* jitsi-meet-on-wkwebview-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "jitsi-meet-on-wkwebview-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C64E80F525871D2800F2B390 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C64E80F725871D2800F2B390 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		C64E80FE25871D2B00F2B390 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C64E810125871D2B00F2B390 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C64E810325871D2B00F2B390 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE4CCC6DB159E7864ECEF4F6 /* Pods-jitsi-meet-on-wkwebview-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jitsi-meet-on-wkwebview-demo.debug.xcconfig"; path = "Target Support Files/Pods-jitsi-meet-on-wkwebview-demo/Pods-jitsi-meet-on-wkwebview-demo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A050B43C127371502D502617 /* Pods_jitsi_meet_on_wkwebview_demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		79C2B1B15AE6C72DF4062A70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C992E67B2D273C72411CDC4 /* Pods_jitsi_meet_on_wkwebview_demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C64E80E925871D2800F2B390 = {
 			isa = PBXGroup;
 			children = (
 				C64E80F425871D2800F2B390 /* jitsi-meet-on-wkwebview-demo */,
 				C64E80F325871D2800F2B390 /* Products */,
+				CA70FF8B1B01C03BDEE1D456 /* Pods */,
+				79C2B1B15AE6C72DF4062A70 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,15 @@
 			path = "jitsi-meet-on-wkwebview-demo";
 			sourceTree = "<group>";
 		};
+		CA70FF8B1B01C03BDEE1D456 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE4CCC6DB159E7864ECEF4F6 /* Pods-jitsi-meet-on-wkwebview-demo.debug.xcconfig */,
+				C0A03AE7D274C2CDE9EAF5E8 /* Pods-jitsi-meet-on-wkwebview-demo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C64E810625871D2B00F2B390 /* Build configuration list for PBXNativeTarget "jitsi-meet-on-wkwebview-demo" */;
 			buildPhases = (
+				EA2077F0AD7DD8921B13170E /* [CP] Check Pods Manifest.lock */,
 				C64E80EE25871D2800F2B390 /* Sources */,
 				C64E80EF25871D2800F2B390 /* Frameworks */,
 				C64E80F025871D2800F2B390 /* Resources */,
+				3F1B23E9FF6D24B688D3DDB1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +157,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F1B23E9FF6D24B688D3DDB1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-jitsi-meet-on-wkwebview-demo/Pods-jitsi-meet-on-wkwebview-demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-jitsi-meet-on-wkwebview-demo/Pods-jitsi-meet-on-wkwebview-demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-jitsi-meet-on-wkwebview-demo/Pods-jitsi-meet-on-wkwebview-demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA2077F0AD7DD8921B13170E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-jitsi-meet-on-wkwebview-demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C64E80EE25871D2800F2B390 /* Sources */ = {
@@ -283,6 +351,7 @@
 		};
 		C64E810725871D2B00F2B390 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE4CCC6DB159E7864ECEF4F6 /* Pods-jitsi-meet-on-wkwebview-demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -293,7 +362,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "io.ubitec.jitsi-meet-on-wkwebview-demo";
+				PRODUCT_BUNDLE_IDENTIFIER = "vn.vanhuong.jitsi-meet-on-wkwebview-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -302,6 +371,7 @@
 		};
 		C64E810825871D2B00F2B390 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0A03AE7D274C2CDE9EAF5E8 /* Pods-jitsi-meet-on-wkwebview-demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,7 +382,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "io.ubitec.jitsi-meet-on-wkwebview-demo";
+				PRODUCT_BUNDLE_IDENTIFIER = "vn.vanhuong.jitsi-meet-on-wkwebview-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

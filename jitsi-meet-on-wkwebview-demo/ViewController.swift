@@ -6,12 +6,25 @@
 //
 
 import UIKit
+import WebKit
+import WKWebViewRTC
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, WKUIDelegate {
+    
+    var webView: WKWebView!
+    
+    override func loadView() {
+        let webConfiguration = WKWebViewConfiguration()
+        webView = WKWebView(frame: .zero, configuration: webConfiguration)
+        webView.uiDelegate = self
+        view = webView
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        WKWebViewRTC(wkwebview: webView, contentController: webView.configuration.userContentController)
+        webView.load(URLRequest(url: URL(string: "https://meet.jit.si/vnnvanhuong")!))
     }
 
 
