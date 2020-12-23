@@ -1,4 +1,4 @@
-# WKWebViewRTC Demo
+# Jitsi Meet on WKWebView Demo
 
 Up and Run
 
